@@ -2,7 +2,7 @@ from sqlalchemy import Column, Integer, String, DateTime, Boolean, ForeignKey, J
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
 
-from backend.db.database import Base
+from db.database import Base
 
 # класс Story создаёт ORM-модель (таблицу в БД), унаследованную от Base
 # Base - объект, созданный через declarative_base() - он говорит SQLAlchemy, что это таблица

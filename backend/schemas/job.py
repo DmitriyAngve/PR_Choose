@@ -11,7 +11,7 @@ class StoryJobBase(BaseModel):
 # разреши мне создавать эту модель не только из dict, но и из обычных Python-моделей (например, SQLAlchemy)
 
 class StoryJobResponse(BaseModel):
-    job_id: int
+    job_id: str
     status: str
     created_at: datetime
     story_id: Optional[int] = None
